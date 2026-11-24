@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MANIKANTA Software Developers · MANIKANTA AI</title>
+<style>
+:root{--bg:#fff8fd;--card:#fff;--tx:#2a1740;--mu:#6b5a80;--a:#ff4fa3;--b:#7c4dff;--bd:#eadcf5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#150c24;--card:#22143a;--tx:#f5ecff;--mu:#b9a6d6;--bd:#3a2760}}
+:root[data-theme=dark]{--bg:#150c24;--card:#22143a;--tx:#f5ecff;--mu:#b9a6d6;--bd:#3a2760}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--tx);line-height:1.55}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;gap:6px;flex-wrap:wrap;justify-content:center;padding:10px;background:var(--card);border-bottom:1px solid var(--bd)}
+nav a{color:var(--tx);text-decoration:none;padding:6px 14px;border-radius:99px;font-weight:600;font-size:14px}nav a:hover{background:linear-gradient(90deg,var(--a),var(--b));color:#fff}
+.cover{position:relative;overflow:hidden;min-height:88vh;display:grid;place-items:center;text-align:center;padding:40px 20px;color:#fff;background:linear-gradient(130deg,#ff4fa3,#7c4dff,#00c2ff,#ffb300);background-size:300% 300%;animation:bg 12s ease infinite}
+@keyframes bg{50%{background-position:100% 50%}}
+.cover h1{font-size:clamp(2.2rem,7vw,4.8rem);margin:0;text-shadow:0 4px 20px #0005}.cover p{font-size:1.2rem;max-width:560px;margin:12px auto 24px}
+.dec{position:absolute;font-size:2.4rem;animation:fl 6s ease-in-out infinite;opacity:.85}@keyframes fl{50%{transform:translateY(-22px) rotate(12deg)}}
+.blob{position:absolute;border-radius:50%;opacity:.25;background:#fff;animation:fl 9s ease-in-out infinite}
+.btn{display:inline-block;border:0;cursor:pointer;padding:12px 26px;border-radius:99px;font-weight:700;font-size:15px;text-decoration:none;background:#fff;color:#7c4dff;margin:4px;box-shadow:0 6px 18px #0003;transition:.2s}.btn:hover{transform:translateY(-3px) scale(1.04)}
+.btn.p{background:linear-gradient(90deg,var(--a),var(--b));color:#fff}
+section{max-width:1050px;margin:auto;padding:56px 18px}h2{font-size:2rem;margin:0 0 6px;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block}
+.sub{color:var(--mu);margin:0 0 22px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:20px;transition:.25s;cursor:pointer}.card:hover{transform:translateY(-6px);box-shadow:0 12px 28px #7c4dff33}.card .i{font-size:2rem}.card h3{margin:6px 0}.card p{margin:0;color:var(--mu);font-size:14px}
+#ai{background:linear-gradient(135deg,#3a1c71,#d76d77,#ffaf7b);padding:56px 18px;color:#fff}#ai .in{max-width:1050px;margin:auto}#ai h2{background:none;color:#fff}#ai .sub{color:#ffe9f5}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}.tabs button{border:0;border-radius:99px;padding:9px 16px;font-weight:700;cursor:pointer;background:#ffffff33;color:#fff}.tabs button.on{background:#fff;color:#7c4dff}
+.panel{display:none;background:var(--card);color:var(--tx);border-radius:20px;padding:18px}.panel.on{display:block}
+input,textarea,select{width:100%;padding:10px;border-radius:12px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);font:inherit;margin:4px 0}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.row>*{flex:1 1 140px}
+.log{height:300px;overflow:auto;border:1px solid var(--bd);border-radius:14px;padding:10px;background:var(--bg);margin-bottom:8px}
+.m{padding:8px 12px;border-radius:14px;margin:6px 0;max-width:85%;white-space:pre-wrap}.m.u{background:linear-gradient(90deg,var(--a),var(--b));color:#fff;margin-left:auto}.m.a{background:var(--card);border:1px solid var(--bd)}
+canvas,video,.out img{max-width:100%;border-radius:14px;background:#0002}.out{margin-top:10px;white-space:pre-wrap}
+.sl{display:grid;grid-template-columns:110px 1fr;align-items:center;gap:6px;font-size:14px}.note{font-size:12px;color:var(--mu)}
+footer{text-align:center;padding:30px;color:var(--mu)}footer a{color:var(--b);font-weight:700}
+</style></head><body>
+<nav><a href="#home">🏠 Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#ai">✨ MANIKANTA AI</a><a href="#work">Projects</a><a href="#team">Team</a><a href="#contact">Contact</a></nav>
+
+<header class="cover" id="home">
+<span class="blob" style="width:220px;height:220px;left:-60px;top:10%"></span><span class="blob" style="width:300px;height:300px;right:-90px;bottom:-60px"></span>
+<span class="dec" style="left:8%;top:14%">💻</span><span class="dec" style="right:10%;top:12%;animation-delay:1s"></span><span class="dec" style="left:14%;bottom:14%;animation-delay:2s">
+</span><span class="dec" style="right:16%;bottom:18%;animation-delay:3s"></span><span class="dec" style="left:48%;top:6%;animation-delay:.5s">✨</span><span class="dec" style="left:3%;top:50%;animation-delay:2.5s">🎨</span>
+<div><h1>MANIKANTA Software Developers</h1><p>We craft beautiful websites, apps and AI tools that make ideas come alive.</p>
+<a class="btn" href="#ai">✨ Try MANIKANTA AI</a><a class="btn" href="#services">Our Services</a><a class="btn" href="#contact">Contact Us</a></div>
+</header>
+
+<section id="about"><h2>About Us</h2><p class="sub">"HARDWORK IS THE SECRET OF THE SUCCESS".</p>
+<div class="grid"><div class="card"><div class="i">🎯</div><h3>Mission</h3><p>Deliver affordable, high-quality software and make AI free and useful for everyone.</p></div>
+<div class="card"><div class="i">👁️</div><h3>Vision</h3><p>To become a trusted technology partner for businesses and students across India.</p></div>
+<div class="card"><div class="i">💡</div><h3>Values</h3><p>Creativity, honesty, speed and customer happiness.</p></div></div></section>
+
+<section id="services"><h2>Services</h2><p class="sub">Tap a card to enquire.</p><div class="grid" id="svc"></div></section>
+
+<div id="ai"><div class="in"><h2>✨ MANIKANTA AI</h2><p class="sub">Free AI studio: chat, tools, photo editing, image generation and video editing.</p>
+<div class="tabs" id="tabs"></div>
+
+<div class="panel on" id="p-chat"><div class="log" id="log"><div class="m a">Hi! I'm MANIKANTA AI 👋 Ask me anything: coding, studies, ideas, writing.</div></div>
+<div class="row"><input id="q" placeholder="Type your message…"><button class="btn p" id="send" style="flex:0 0 auto">Send ➤</button></div></div>
+
+<div class="panel" id="p-tools"><select id="tool"><option value="Summarize this text in 5 short bullet points:">📝 Summarizer</option><option value="Translate this into Tamil, Telugu and Hindi:">🌐 Translator</option><option value="Write a professional email based on this:">✉️ Email Writer</option><option value="Explain this code simply and point out bugs:">🐞 Code Helper</option><option value="Fix grammar and improve this text:">✅ Grammar Fixer</option><option value="Give 10 creative ideas or names for:">💡 Idea Generator</option><option value="Create a 7-day study plan for:">📚 Study Planner</option><option value="Write a catchy social media caption for:">📣 Caption Writer</option></select>
+<textarea id="tin" rows="5" placeholder="Paste your text here…"></textarea><button class="btn p" id="trun">Run AI Tool</button><div class="out" id="tout"></div>
+<hr style="border:0;border-top:1px solid var(--bd);margin:16px 0"><b>Quick tools</b>
+<div class="row" style="margin-top:8px"><button class="btn p" onclick="ct('up')">UPPERCASE</button><button class="btn p" onclick="ct('low')">lowercase</button><button class="btn p" onclick="ct('cnt')">Count words</button><button class="btn p" onclick="ct('pw')">🔑 Password</button></div></div>
+
+<div class="panel" id="p-gen"><textarea id="gp" rows="3" placeholder="Describe the image, e.g. a peacock in a neon jungle at sunset"></textarea>
+<div class="row"><select id="gs"><option>colorful flat illustration</option><option>cartoon</option><option>minimal line art</option><option>vibrant abstract art</option><option>pixel art</option></select><button class="btn p" id="grun">🎨 Generate Image</button></div>
+<div class="out" id="gout"></div><div class="note">Images are drawn by AI as scalable vector (SVG) art, not photos.</div></div>
+
+<div class="panel" id="p-photo"><input type="file" id="pf" accept="image/*">
+<div class="sl"><span>Brightness</span><input type="range" id="pb" min="0" max="200" value="100"><span>Contrast</span><input type="range" id="pc" min="0" max="200" value="100"><span>Saturate</span><input type="range" id="ps" min="0" max="300" value="100"><span>Blur</span><input type="range" id="pbl" min="0" max="10" value="0"><span>Hue</span><input type="range" id="ph" min="0" max="360" value="0"></div>
+<div class="row" style="margin:8px 0"><button class="btn p" data-f="grayscale(1)">B&amp;W</button><button class="btn p" data-f="sepia(1)">Sepia</button><button class="btn p" data-f="invert(1)">Invert</button><button class="btn p" data-f="">Reset</button><button class="btn p" id="prot">⟳ Rotate</button><button class="btn p" id="pflip">⇋ Flip</button><button class="btn p" id="psave">⬇ Save</button></div>
+<canvas id="cv" width="640" height="400"></canvas></div>
+
+<div class="panel" id="p-video"><input type="file" id="vf" accept="video/*"><video id="vid" controls playsinline style="width:100%;margin-top:8px"></video>
+<div class="sl"><span>Speed</span><input type="range" id="vs" min="25" max="300" value="100"><span>Brightness</span><input type="range" id="vb" min="30" max="200" value="100"><span>Contrast</span><input type="range" id="vc" min="30" max="200" value="100"><span>Saturate</span><input type="range" id="vsat" min="0" max="300" value="100"><span>Trim start (s)</span><input type="number" id="t0" value="0" min="0"><span>Trim end (s)</span><input type="number" id="t1" value="0" min="0"></div>
+<div class="row" style="margin-top:8px"><button class="btn p" id="vpl">▶ Play trimmed</button><button class="btn p" id="vsnap">📸 Snapshot</button><button class="btn p" data-v="grayscale(1)">B&amp;W</button><button class="btn p" data-v="sepia(1)">Sepia</button><button class="btn p" data-v="none">Reset</button></div>
+<div class="note">Live preview editor: filters, speed and trim apply on playback; snapshots save as images.</div></div>
+</div></div>
+
+<section id="work"><h2>Projects</h2><p class="sub">A few things we've built.</p>
+<div class="grid"><div class="card"><div class="i">🛒</div><h3>E-Commerce Store</h3><p>Fast shopping site with UPI payments.</p></div><div class="card"><div class="i">🏫</div><h3>School Manager</h3><p>Attendance, marks and fee tracking.</p></div><div class="card"><div class="i">📱</div><h3>Delivery App</h3><p>Live order tracking for local shops.</p></div></div></section>
+
+<section id="team"><h2>Team</h2><p class="sub">The people behind the code.</p>
+<div class="grid"><div class="card"><div class="i">sss🤟</div><h3>Manikanta</h3><p>Founder &amp; software developer</p></div><div class="card"><div class="i">🎨</div><h3>Designing</h3><p>11:02 24-11-2026
+<section id="contact"><h2>Contact</h2><p class="sub">Tell us about your project.</p>
+<div class="card" style="cursor:default;max-width:520px"><input id="cn" placeholder="Your name"><input id="cm" placeholder="Email or phone"><textarea id="cx" rows="4" placeholder="Your message"></textarea><button class="btn p" id="cs">Send Message</button><div id="cr" class="note"></div><p class="note">📍    ss Vijayawada,Andhrapradesh,INDIA</p></div></section>
+<footer>© 2026 MANIKANTA Software Developers · <a href="#home">Back to top ↑</a></footer>
+
+<script>
+const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+[['🌐','Web Development','Responsive, fast, beautiful websites.'],['📱','App Development','Android and iOS apps.'],['🤖','AI Solutions','Chatbots and smart automation.'],['🎨','UI/UX Design','Eye-catching interfaces.'],['☁️','Cloud and Hosting','Reliable deployment.'],['🛟','Support','Maintenance when you need it.']].forEach(s=>{const d=document.createElement('div');d.className='card';d.innerHTML=`<div class="i">${s[0]}</div><h3>${s[1]}</h3><p>${s[2]}</p>`;d.onclick=()=>{$('cx').value='I am interested in: '+s[1];location.hash='contact'};$('svc').append(d)});
+[['chat','💬 Chat'],['tools','🧰 AI Tools'],['gen','🎨 Image Generator'],['photo','🖼️ Photo Editor'],['video','🎬 Video Editor']].forEach(([k,l],i)=>{const b=document.createElement('button');b.textContent=l;if(!i)b.className='on';b.onclick=()=>{document.querySelectorAll('.tabs button,.panel').forEach(x=>x.classList.remove('on'));b.classList.add('on');$('p-'+k).classList.add('on')};$('tabs').append(b)});
+let S;const ask=async(i,o)=>{S=S||await .use('sample');if(!S)throw{message:'AI is not available in this view. Open the page inside .ai.'};return S(i,o)};
+const dl=async(n,b)=>{const d=await ss.use('downloads');if(d)d.save({filename:n,data:b}).catch(()=>{})};
+const hist=[];
+async function send(){const t=$('q').value.trim();if(!t)return;$('q').value='';const L=$('log');L.insertAdjacentHTML('beforeend',`<div class="m u">${esc(t)}</div>`);const a=document.createElement('div');a.className='m a';a.textContent='Thinking…';L.append(a);hist.push({role:'user',content:t});
+try{const r=await ask([{role:'user',content:'You are MANIKANTA AI, a friendly helpful assistant from MANIKANTASSSS Software Developers. Keep answers clear.'},{role:'assistant',content:'Understood!'},...hist.slice(-12)],{cache:false,onText:({text})=>{a.textContent=text;L.scrollTop=L.scrollHeight}});hist.push({role:'assistant',content:r.text});a.textContent=r.text}catch(e){a.textContent='⚠️ '+(e.message||'Error');hist.pop()}L.scrollTop=L.scrollHeight}
+$('send').onclick=send;$('q').onkeydown=e=>{if(e.key==='Enter')send()};
+$('trun').onclick=async()=>{const t=$('tin').value.trim();if(!t)return;$('tout').textContent='Working…';try{const r=await ask($('tool').value+'\n\n'+t,{onText:({text})=>$('tout').textContent=text});$('tout').textContent=r.text}catch(e){$('tout').textContent='⚠️ '+(e.message||'Error')}};
+function ct(k){const v=$('tin').value,o=$('tout');o.textContent=k==='up'?v.toUpperCase():k==='low'?v.toLowerCase():k==='cnt'?`${v.trim()?v.trim().split(/\s+/).length:0} words, ${v.length} characters`:Array.from(crypto.getRandomValues(new Uint8Array(16)),x=>'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz23456789!@#$'[x%58]).join('')}
+$('grun').onclick=async()=>{const p=$('gp').value.trim();if(!p)return;const o=$('gout');o.textContent='Painting your image…';try{const r=await ask(`Create a beautiful ${$('gs').value} image of: ${p}. Return ONLY one complete SVG (viewBox 0 0 800 600), rich colors, gradients, no scripts, no markdown.`,{modelTier:'complex'});const m=r.text.match(/<svg[\s\S]*<\/svg>/i);if(!m)throw{message:'Try again with a different description.'};const svg=m[0].replace(/<script[\s\S]*?<\/script>/gi,''),bl=new Blob([svg],{type:'image/svg+xml'});o.innerHTML=`<img src="${URL.createObjectURL(bl)}" alt="Generated image" style="width:100%"><br><button class="btn p" id="gdl">⬇ Download SVG</button>`;$('gdl').onclick=()=>dl('manikanta-ai-image.svg',bl)}catch(e){o.textContent='⚠️ '+(e.message||'Error')}};
+const cv=$('cv'),cx=cv.getContext('2d');let img=null,rot=0,flip=1,pre='';
+function draw(){if(!img)return;const q=rot%2;cv.width=q?img.height:img.width;cv.height=q?img.width:img.height;cx.save();cx.filter=`brightness(${$('pb').value}%) contrast(${$('pc').value}%) saturate(${$('ps').value}%) blur(${$('pbl').value}px) hue-rotate(${$('ph').value}deg) ${pre}`;cx.translate(cv.width/2,cv.height/2);cx.rotate(rot*Math.PI/2);cx.scale(flip,1);cx.drawImage(img,-img.width/2,-img.height/2);cx.restore()}
+$('pf').onchange=e=>{const f=e.target.files[0];if(!f)return;const i=new Image();i.onload=()=>{img=i;draw()};i.src=URL.createObjectURL(f)};
+['pb','pc','ps','pbl','ph'].forEach(i=>$(i).oninput=draw);document.querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>{pre=b.dataset.f;draw()});
+$('prot').onclick=()=>{rot++;draw()};$('pflip').onclick=()=>{flip*=-1;draw()};
+$('psave').onclick=()=>cv.toBlob(b=>dl('manikanta-photo.png',b));
+const v=$('vid');let vp='';
+$('vf').onchange=e=>{const f=e.target.files[0];if(f){v.src=URL.createObjectURL(f);v.onloadedmetadata=()=>$('t1').value=Math.floor(v.duration)}};
+function vf(){v.style.filter=`brightness(${$('vb').value}%) contrast(${$('vc').value}%) saturate(${$('vsat').value}%) ${vp}`;v.playbackRate=$('vs').value/100}
+['vs','vb','vc','vsat'].forEach(i=>$(i).oninput=vf);document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{vp=b.dataset.v==='none'?'':b.dataset.v;vf()});
+$('vpl').onclick=()=>{v.currentTime=+$('t0').value;vf();v.play()};v.ontimeupdate=()=>{const e=+$('t1').value;if(e&&v.currentTime>=e)v.pause()};
+$('vsnap').onclick=()=>{const c=document.createElement('canvas');c.width=v.videoWidth;c.height=v.videoHeight;const x=c.getContext('2d');x.filter=v.style.filter||'none';x.drawImage(v,0,0);c.toBlob(b=>dl('manikanta-snapshot.png',b))};
+$('cs').onclick=()=>{$('cr').textContent=$('cn').value&&$('cx').value?'Thank you, '+$('cn').value+'! We will get back to you soon. 💜':'Please fill in your name and message.'};
+</script></body></html>
